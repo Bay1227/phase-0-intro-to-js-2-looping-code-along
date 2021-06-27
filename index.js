@@ -1,14 +1,10 @@
 // Code your solutions in this file
-const writeCards = ["Aba", "Brendon", "Ali"]
-
-function thankYouCards(writeCards) {
-  for (let i = 0; i < writeCards.length; i++) {
-    console.log(`"Thank you, ${writeCards[i]} for the wonderful birthday gift!"`);
-    debugger;
-   
-  }
-
-  return writeCards;
+const countDown = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+function countDown10(countdown) {
+    let countDown = 10;
+    while (countDown > 0) {
+        console.log(countDown--);
+    }
+    return countDown;
 }
-
-thankYouCards(writeCards); 
+countDown10(countDown);
