@@ -1,10 +1,22 @@
 // Code your solutions in this file
-const countDown = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
-function countDown10(countdown) {
-    let countDown = 10;
-    while (countDown > 0) {
-        console.log(countDown--);
+const names = ['Lisa', 'Kaitlin', 'Jan'];
+
+
+
+function writeCards(names, event) {
+    let newArr = [];
+    for (let i = 0; i < names.length; i++) {
+        newArr.push(`Thank you, ${names[i]}, for the wonderful surprise gift!`);
+       
     }
-    return countDown;
+    return newArr;    
 }
-countDown10(countDown);
+function countDown(num) {
+    while(num >= 0) {
+        console.log(num);
+        num--;
+    }
+    // for (let countDown = 0; countDown < 11; countDown++) {
+    //     console.log(countDown);
+    // }
+}
